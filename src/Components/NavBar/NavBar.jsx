@@ -28,7 +28,7 @@ const NavBar = () => {
 
         <ul className={`md:flex gap-6 absolute md:static
         ${ open ? ' top-[6rem] ' : ' -top-[18rem] ' } 
-        bg-slate-500 p-8 duration-1000  `
+        bg-slate-500 p-8 duration-1000  text-white font-extrabold `
         } >
             {
                 routes.map( route => 
