@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar/NavBar'
 import PriceOptions from './Components/PriceOptions/PriceOptions';
 import ReChart from './Components/ReChart/ReChart';
 import FoodCal from './Components/FoodCal/FoodCal';
+import Phones from './Components/Phones/Phones';
 
 // import DaisyUINav from './Components/DaisyUINav/DaisyUINav'
 
@@ -20,7 +21,7 @@ function App() {
     <PriceOptions></PriceOptions>
     <ReChart></ReChart>
     <FoodCal></FoodCal>
-      
+    <Phones></Phones>
     </>
   )
 }
