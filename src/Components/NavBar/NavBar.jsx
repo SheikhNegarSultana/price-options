@@ -5,7 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const NavBar = () => {
 
-    const[open , setOpen] = useState(true);
+    const[open , setOpen] = useState(false);
 
 
     const routes = [
@@ -21,12 +21,15 @@ const NavBar = () => {
 
         <div className=" mb-[1rem] md:hidden " onClick={() => setOpen(!open)}>
         {
-            open === true ? <FaBars ></FaBars> : <RxCross2></RxCross2>
+            open === true ? <RxCross2></RxCross2> : <FaBars ></FaBars>
         }
         </div>
 
 
-        <ul className=" md:flex gap-6 ">
+        <ul className={`md:flex gap-6 absolute md:static
+        ${ open ? ' ' : "hidden" } 
+        bg-slate-500 p-8 duration-100  `
+        } >
             {
                 routes.map( route => 
                 <Link 
